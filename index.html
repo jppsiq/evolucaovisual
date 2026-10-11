@@ -1,0 +1,291 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Evolução Visual</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap">
+<style>/* Layout: a black-and-white brand page built from the contrast cards themselves. Sticky tab bar, a bull's-eye hero, full-bleed inverse bands and pattern strips as dividers. */
+:root{--paper:#FBFAF6;--ink:#0C0C0D;--soft:#EFEDE6;--mute:#56534C;--red:#C9241B;--yellow:#F3CF00;--photo:#ECE9E3;--onphoto:#0C0C0D;
+--display:"Archivo","Arial Narrow",Arial,sans-serif;--body:"Atkinson Hyperlegible",Verdana,Arial,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0C0C0D;--ink:#F7F5EF;--soft:#1C1C1E;--mute:#B5B1A8;--red:#FF5548;--yellow:#FFD91A;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#0C0C0D;--ink:#F7F5EF;--soft:#1C1C1E;--mute:#B5B1A8;--red:#FF5548;--yellow:#FFD91A;color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--body);font-size:1.0625rem;line-height:1.55}
+h1,h2,h3,p,ul,ol,figure{margin:0;padding:0}ul,ol{list-style:none}
+a{color:inherit}img{display:block}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.w{max-width:1180px;margin-inline:auto;padding-inline:clamp(16px,4vw,40px)}
+.sec{padding-block:clamp(2.5rem,6vw,4.5rem)}
+.eyebrow{font-family:var(--display);font-stretch:112%;font-weight:700;font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.9rem}
+h1,h2,h3{font-family:var(--display);text-wrap:balance}
+h1{font-stretch:118%;font-weight:900;font-size:clamp(2.3rem,6.4vw,4.6rem);line-height:.98;letter-spacing:-.015em;text-transform:uppercase}
+.h1b{font-size:clamp(2rem,5vw,3.5rem);max-width:18ch}
+h2{font-stretch:112%;font-weight:900;font-size:clamp(1.5rem,3.2vw,2.3rem);line-height:1.05;letter-spacing:-.01em}
+h3{font-weight:800;font-size:1.1rem;line-height:1.2}
+.lead{font-size:clamp(1.08rem,1.6vw,1.25rem);max-width:60ch;margin-top:1.2rem}
+.hl{background:var(--yellow);color:#0C0C0D;padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.btn{display:inline-flex;align-items:center;gap:.4em;font:inherit;font-family:var(--display);font-stretch:108%;font-weight:800;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;cursor:pointer;padding:.85em 1.3em;border:2px solid var(--ink);border-radius:999px;background:var(--ink);color:var(--paper)}
+.btn.ghost{background:transparent;color:var(--ink)}.btn.sm{font-size:.76rem;padding:.65em 1em}
+.btn:hover{background:var(--red);border-color:var(--red);color:#fff}
+.btn.onv{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;background:var(--paper);border-bottom:2px solid var(--ink)}
+.bar{display:flex;align-items:center;gap:1rem;justify-content:space-between;flex-wrap:wrap;padding-block:.55rem}
+.brand{display:flex;align-items:center;gap:.6rem;text-decoration:none;font-family:var(--display);font-stretch:120%;font-weight:900;letter-spacing:.14em;text-transform:uppercase;font-size:.9rem}
+.brand img,.fb img{background:#fff;border-radius:50%}
+.tabs{display:flex;gap:.25rem;overflow-x:auto;max-width:100%;scrollbar-width:none;min-width:0}
+.tabs button{font:inherit;font-family:var(--display);font-weight:700;font-size:.82rem;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;cursor:pointer;background:none;color:var(--ink);border:2px solid transparent;border-radius:999px;padding:.5em .95em}
+.tabs button:hover{border-color:var(--ink)}
+.tabs button[aria-selected="true"]{background:var(--ink);color:var(--paper)}
+/* hero */
+.hgrid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:clamp(1.5rem,5vw,4rem);align-items:center;padding-block:clamp(2.2rem,6vw,4.5rem)}
+.htx{min-width:0}.cta{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.8rem}
+.target{max-width:440px;width:100%;justify-self:center}.target svg{display:block;width:100%;height:auto}
+.target .k{fill:var(--ink)}.target .w{fill:var(--paper)}.target .dot{fill:var(--red)}.target .rim{fill:none;stroke:var(--ink);stroke-width:8}
+.spin{animation:grow 7s linear infinite}
+@keyframes grow{from{transform:scale(1)}to{transform:scale(1.7424)}}
+@media (prefers-reduced-motion:reduce){.spin{animation:none}}
+/* pattern strip */
+.pat{display:grid;grid-template-columns:repeat(6,1fr);height:clamp(44px,7vw,84px);border-block:2px solid var(--ink);--u:clamp(7px,1.15vw,14px)}
+.pat i{display:block}.pat i:nth-child(n+5){display:none}
+@media (min-width:760px){.pat i:nth-child(n+5){display:block}}
+@media (max-width:759px){.pat{grid-template-columns:repeat(4,1fr)}}
+.pat .s{background:repeating-linear-gradient(0deg,var(--ink) 0 var(--u),var(--paper) var(--u) calc(var(--u)*2))}
+.pat .s.v{background:repeating-linear-gradient(90deg,var(--ink) 0 var(--u),var(--paper) var(--u) calc(var(--u)*2))}
+.pat .c{background:conic-gradient(var(--ink) 25%,var(--paper) 0 50%,var(--ink) 0 75%,var(--paper) 0) 0 0/calc(var(--u)*2.6) calc(var(--u)*2.6)}
+.pat .r{background:repeating-radial-gradient(circle at 50% 50%,var(--ink) 0 var(--u),var(--paper) var(--u) calc(var(--u)*2))}
+.pat .d{background:radial-gradient(circle,var(--paper) 34%,transparent 36%) 0 0/calc(var(--u)*2.6) calc(var(--u)*2.6) var(--ink)}
+/* about */
+.about{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(1.5rem,5vw,4rem);align-items:center}
+.aph img{width:100%;height:auto;border:2px solid var(--ink);border-radius:50%;aspect-ratio:1;object-fit:cover;max-width:380px;margin-inline:auto}
+.atx{min-width:0}.atx p+p{margin-top:.9rem}.atx h2{margin-bottom:.4rem}.reg{font-family:var(--display);font-weight:700;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:var(--mute);margin-bottom:1rem}.atx .reg+p{margin-top:0}.atx p{max-width:62ch}
+.facts{display:flex;flex-wrap:wrap;gap:1rem 2.2rem;margin-top:1.6rem;padding-top:1.2rem;border-top:2px solid var(--ink);font-size:.9rem;color:var(--mute)}
+.facts b{display:block;font-family:var(--display);font-stretch:112%;font-weight:900;font-size:1.35rem;color:var(--ink);line-height:1.15}
+/* inverse band */
+.inv{background:var(--ink);color:var(--paper)}
+.shead{display:flex;justify-content:space-between;align-items:flex-end;gap:1rem;flex-wrap:wrap;margin-bottom:1.6rem}
+.trio{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+.trio img{width:100%;height:auto;aspect-ratio:1;object-fit:cover;border-radius:10px}
+figcaption{font-size:.86rem;margin-top:.5rem;line-height:1.35}
+/* product grid */
+.grid{display:grid;gap:1.1rem}.g4{grid-template-columns:repeat(auto-fill,minmax(230px,1fr))}.g3{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.pc{display:flex;flex-direction:column;text-decoration:none;border:2px solid var(--ink);border-radius:14px;overflow:hidden;background:var(--paper);min-width:0;transition:transform .15s}
+.pc:hover{transform:translateY(-3px)}.pc:hover em{background:var(--red);color:#fff}
+.pimg{display:block;aspect-ratio:4/3;background:var(--photo);border-bottom:2px solid var(--ink)}
+.pimg img{width:100%;height:100%;object-fit:cover}.pimg.port img{object-fit:contain}
+.pb{display:grid;grid-template-columns:auto 1fr;column-gap:.7rem;row-gap:.15rem;padding:.9rem 1rem 1rem;flex:1;align-content:start}
+.pn{grid-row:1/3;font-family:var(--display);font-stretch:118%;font-weight:900;font-size:2rem;line-height:1}
+.pcat{font-family:var(--display);font-weight:700;font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--mute);align-self:end}
+.pname{font-family:var(--display);font-weight:800;font-size:1.02rem;line-height:1.2}
+.pspec{grid-column:1/3;font-size:.88rem;color:var(--mute);min-height:1.3em;margin-top:.3rem}
+.prow{grid-column:1/3;display:flex;flex-wrap:wrap;align-items:center;gap:.4rem .6rem;margin-top:.6rem;padding-top:.7rem;border-top:1px solid var(--ink)}
+.prow b{font-family:var(--display);font-stretch:108%;font-weight:900;font-size:1.25rem;font-variant-numeric:tabular-nums}
+.prow i{font-style:normal;font-size:.66rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;border:1.5px solid var(--ink);border-radius:99px;padding:.1em .6em}
+.prow em{font-style:normal;margin-left:auto;font-family:var(--display);font-weight:800;font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;background:var(--ink);color:var(--paper);border-radius:99px;padding:.45em .8em;white-space:nowrap}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1.6rem}
+.chip{font:inherit;font-size:.86rem;cursor:pointer;background:transparent;color:var(--ink);border:2px solid var(--ink);border-radius:999px;padding:.4em .9em}
+.chip small{opacity:.65;font-size:.8em;margin-left:.2em}.chip.on{background:var(--ink);color:var(--paper)}
+.phead{padding-bottom:clamp(1.5rem,3vw,2.2rem)}
+.note{font-size:.9rem;color:var(--mute);max-width:70ch;padding-block:1.6rem 3rem}
+/* timeline */
+.tl{margin-top:1.6rem;border-top:2px solid var(--ink)}
+.tl li{display:grid;grid-template-columns:minmax(0,11rem) minmax(0,1fr) minmax(0,1fr);gap:.6rem 2rem;padding-block:1.2rem;border-bottom:1px solid var(--ink)}
+.tl h3{font-stretch:112%;font-weight:900;font-size:1.3rem}
+.tl p{font-size:.98rem;min-width:0}.tl span,.pts h3{display:block}
+.tl span{font-family:var(--display);font-weight:700;font-size:.66rem;letter-spacing:.16em;text-transform:uppercase;color:var(--mute);margin-bottom:.25rem}
+.two{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:clamp(1.5rem,5vw,4rem)}
+.two>div p{margin-top:1rem;max-width:48ch}
+.pts{display:grid;gap:1.3rem}.pts li{padding-left:1.1rem;border-left:6px solid var(--paper);min-width:0}
+.pts.plain li{border-left-color:var(--ink)}.pts p{margin-top:.3rem;font-size:.98rem}
+/* gallery */
+.masonry{columns:3 260px;column-gap:1rem;padding-bottom:3rem}
+.masonry figure{break-inside:avoid;margin-bottom:1.3rem}
+.masonry img{width:100%;height:auto;border:2px solid var(--ink);border-radius:10px}
+/* contact */
+.ct{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.1rem;padding-bottom:3.5rem}
+.big{display:block;border:2px solid var(--ink);border-radius:14px;padding:1.4rem 1.5rem;text-decoration:none;font-family:var(--display);font-stretch:112%;font-weight:900;font-size:clamp(1.4rem,3.4vw,2.1rem);line-height:1.15;min-width:0;overflow-wrap:anywhere}
+a.big{background:var(--ink);color:var(--paper)}a.big:hover{background:var(--red)}
+.big small{display:block;font-size:.7rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase;margin-bottom:.5rem;opacity:.8}
+.tel{user-select:all;font-variant-numeric:tabular-nums}.acts{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:1rem}
+/* footer */
+.foot{margin-top:1rem}.fin{display:flex;justify-content:space-between;align-items:center;gap:1.2rem;flex-wrap:wrap;padding-block:1.8rem 2.4rem}
+.fb{display:flex;align-items:center;gap:.9rem}.fb strong{display:block;font-family:var(--display);font-stretch:120%;font-weight:900;letter-spacing:.14em;text-transform:uppercase}
+.fb span{font-size:.9rem;color:var(--mute)}.fl{display:flex;flex-direction:column;gap:.2rem;font-weight:700;text-align:right}
+@media (max-width:820px){.hgrid,.about,.two{grid-template-columns:minmax(0,1fr)}.target{max-width:300px;order:-1}.tl li{grid-template-columns:minmax(0,1fr)}.trio{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.trio figure:last-child{display:none}.fl{text-align:left}.bar{gap:.4rem}}
+</style>
+<header class="top"><div class="w bar">
+<a class="brand" href="#inicio" data-go="inicio"><img src="img/logo.png" alt="" width="44" height="44"><span>Evolução Visual</span></a>
+<nav class="tabs" role="tablist" aria-label="Seções do site">
+<button role="tab" type="button" id="t-inicio" data-go="inicio" aria-selected="true">Início</button>
+<button role="tab" type="button" id="t-estimulacao" data-go="estimulacao" aria-selected="false">Estimulação visual</button>
+<button role="tab" type="button" id="t-catalogo" data-go="catalogo" aria-selected="false">Catálogo</button>
+<button role="tab" type="button" id="t-galeria" data-go="galeria" aria-selected="false">Galeria</button>
+<button role="tab" type="button" id="t-contato" data-go="contato" aria-selected="false">Contato</button>
+</nav></div></header>
+<main>
+<section class="panel" id="inicio" data-panel>
+<div class="hero"><div class="w hgrid">
+<div class="htx"><p class="eyebrow">Jean Hipólito · Terapeuta Ocupacional · Fortaleza, CE</p>
+<h1>Alto contraste para o olhar <span class="hl">aprender a ver</span>.</h1>
+<p class="lead">Cartelas, tabelas e testes para estimulação e avaliação da visão, criados na prática clínica e pensados para o consultório, a escola e a casa da família.</p>
+<p class="cta"><button type="button" class="btn" data-go="catalogo" id="cta-cat">Ver o catálogo</button><a class="btn ghost" href="https://www.instagram.com/evolucaovisual/" target="_blank" rel="noopener">@evolucaovisual ↗</a></p></div>
+<div class="target" aria-hidden="true"><svg viewBox="-250 -250 500 500"><defs><clipPath id="cp"><circle r="246"/></clipPath></defs>
+<g clip-path="url(#cp)"><rect x="-250" y="-250" width="500" height="500" class="w"/><g class="spin"><circle r="312.63" class="w"/><circle r="236.84" class="k"/><circle r="179.42" class="w"/><circle r="135.93" class="k"/><circle r="102.97" class="w"/><circle r="78.01" class="k"/><circle r="59.10" class="w"/><circle r="44.77" class="k"/><circle r="33.92" class="w"/><circle r="25.70" class="k"/><circle r="19.47" class="w"/><circle r="14.75" class="k"/><circle r="11.17" class="w"/><circle r="8.46" class="k"/><circle r="6.41" class="w"/><circle r="4.86" class="k"/><circle r="3.68" class="w"/><circle r="2.79" class="k"/><circle r="2.11" class="w"/><circle r="1.60" class="k"/></g></g>
+<circle r="246" class="rim"/><circle r="30" class="k"/><circle r="11" class="dot"/></svg></div>
+</div></div>
+<div class="pat" aria-hidden="true"><i class="s"></i><i class="c"></i><i class="r"></i><i class="d"></i><i class="s v"></i><i class="c"></i></div>
+<div class="w sec about"><div class="aph"><img src="img/p03.jpg" alt="Jean Hipólito, terapeuta ocupacional" width="1100" height="1076"></div>
+<div class="atx"><p class="eyebrow">Quem faz</p><h2>Jean Hipólito</h2><p class="reg">Terapeuta Ocupacional · CREFITO-6 nº 4269-TO</p>
+<p>Jean Hipólito Martins Borges é terapeuta ocupacional em Fortaleza, com atuação em reabilitação e estimulação visual de crianças com e sem deficiência visual.</p>
+<p>A Evolução Visual nasceu do atendimento. Jean passou a desenhar e produzir os próprios materiais para que a estimulação não ficasse restrita à sessão: são recursos simples de manusear, que o terapeuta usa no consultório e a família continua usando em casa.</p>
+<ul class="facts"><li><b>17</b> recursos no catálogo</li><li><b>Olho de Boi</b> a cartela que deu origem ao projeto</li><li><b>Fortaleza</b> Ceará</li></ul></div></div>
+<div class="inv"><div class="w sec"><div class="shead"><div><p class="eyebrow">Na prática</p><h2>Os materiais em atendimento</h2></div><button type="button" class="btn onv" data-go="galeria" id="cta-gal">Ver a galeria</button></div>
+<div class="trio"><figure class=""><img src="img/p08.jpg" width="1100" height="1024" alt="Cartela com brilho em atendimento" loading="lazy"><figcaption>Cartela com brilho em atendimento</figcaption></figure><figure class=""><img src="img/p07.jpg" width="1100" height="990" alt="Rostos em cores de alto contraste" loading="lazy"><figcaption>Rostos em cores de alto contraste</figcaption></figure><figure class=""><img src="img/p10.jpg" width="1046" height="930" alt="Raquete de contraste com lanterna" loading="lazy"><figcaption>Raquete de contraste com lanterna</figcaption></figure></div></div></div>
+<div class="w sec"><div class="shead"><div><p class="eyebrow">Catálogo</p><h2>Alguns dos recursos</h2></div><button type="button" class="btn" data-go="catalogo" id="cta-cat2">Ver os 17 itens</button></div>
+<div class="grid g4"><a class="pc" href="https://www.instagram.com/evolucaovisual/" target="_blank" rel="noopener" data-cat="estimulacao-visual" aria-label="Kit Cartelas Olho de Boi, R$ 50,00. Pedir pelo Instagram">
+<span class="pimg"><img src="img/prod04.jpg" alt="Kit Cartelas Olho de Boi" loading="lazy"></span>
+<span class="pb"><span class="pn">04</span><span class="pcat">Estimulação visual</span>
+<span class="pname">Kit Cartelas Olho de Boi</span><span class="pspec">Diâmetro 10 cm</span>
+<span class="prow"><b>R$ 50,00</b><em>Pedir no Instagram <span aria-hidden="true">↗</span></em></span></span></a><a class="pc" href="https://www.instagram.com/evolucaovisual/" target="_blank" rel="noopener" data-cat="estimulacao-visual" aria-label="Kit Cartelas com Contrastes, R$ 120,00. Pedir pelo Instagram">
+<span class="pimg"><img src="img/prod01.jpg" alt="Kit Cartelas com Contrastes" loading="lazy"></span>
+<span class="pb"><span class="pn">01</span><span class="pcat">Estimulação visual</span>
+<span class="pname">Kit Cartelas com Contrastes</span><span class="pspec">para Estimulação Visual</span>
+<span class="prow"><b>R$ 120,00</b><em>Pedir no Instagram <span aria-hidden="true">↗</span></em></span></span></a><a class="pc" href="https://www.instagram.com/evolucaovisual/" target="_blank" rel="noopener" data-cat="acuidade-visual" aria-label="Réplica do Lea Gratings, R$ 350,00. Pedir pelo Instagram">
+<span class="pimg"><img src="img/prod17.jpg" alt="Réplica do Lea Gratings" loading="lazy"></span>
+<span class="pb"><span class="pn">17</span><span class="pcat">Acuidade visual</span>
+<span class="pname">Réplica do Lea Gratings</span><span class="pspec">0,25 CPM a 8,0 CPM</span>
+<span class="prow"><b>R$ 350,00</b><em>Pedir no Instagram <span aria-hidden="true">↗</span></em></span></span></a><a class="pc" href="https://www.instagram.com/evolucaovisual/" target="_blank" rel="noopener" data-cat="leitura-e-escrita" aria-label="Tiposcópio, R$ 80,00. Pedir pelo Instagram">
+<span class="pimg"><img src="img/prod14.jpg" alt="Tiposcópio" loading="lazy"></span>
+<span class="pb"><span class="pn">14</span><span class="pcat">Leitura e escrita</span>
+<span class="pname">Tiposcópio</span><span class="pspec">Leitura e escrita · Acetato amarelo</span>
+<span class="prow"><b>R$ 80,00</b><em>Pedir no Instagram <span aria-hidden="true">↗</span></em></span></span></a></div></div>
+</section>
+
+<section class="panel" id="estimulacao" data-panel>
+<div class="w sec phead"><p class="eyebrow">Estimulação visual precoce</p><h1 class="h1b">Ver também se aprende.</h1>
+<p class="lead">A visão não nasce pronta. Nos primeiros anos, as vias que ligam os olhos ao cérebro ainda estão se formando, e é a experiência de olhar que as organiza. Oferecer o estímulo certo na fase certa ajuda o bebê a fixar, a seguir e, depois, a alcançar o que vê.</p></div>
+<div class="pat" aria-hidden="true"><i class="s"></i><i class="c"></i><i class="r"></i><i class="d"></i><i class="s v"></i><i class="c"></i></div>
+<div class="w sec"><p class="eyebrow">Do nascimento aos 3 anos</p><h2>O que muda no olhar, fase a fase</h2><ol class="tl"><li><h3>0 a 1 mês</h3><p><span>O que o bebê vê</span>Visão enevoada: luz, sombras e contrastes fortes. O foco alcança de 20 a 30 cm, a distância do rosto de quem amamenta.</p><p><span>O que oferecer</span>Altíssimo contraste em preto e branco, contornos espessos, rosto humano de perto, luz suave.</p></li><li><h3>2 a 3 meses</h3><p><span>O que o bebê vê</span>Começa a percepção das cores, a partir do vermelho. O bebê já acompanha objetos em movimento lento.</p><p><span>O que oferecer</span>Cores primárias vibrantes, com o vermelho em destaque. Objetos luminosos movidos de um lado para o outro.</p></li><li><h3>4 a 6 meses</h3><p><span>O que o bebê vê</span>Surge a noção de profundidade e melhora a coordenação entre olho e mão. Amarelo e verde entram no repertório.</p><p><span>O que oferecer</span>Brinquedos para ver e tocar, estímulos a várias distâncias, espelhos grandes.</p></li><li><h3>6 a 12 meses</h3><p><span>O que o bebê vê</span>Nitidez e alcance se aproximam dos de um adulto. Reconhece rostos de longe e a visão guia o engatinhar.</p><p><span>O que oferecer</span>Padrões mais complexos, brincadeiras de esconder, exploração segura do ambiente.</p></li><li><h3>1 a 3 anos</h3><p><span>O que o bebê vê</span>As aquisições se refinam. A criança começa a copiar formas simples, como círculos e linhas.</p><p><span>O que oferecer</span>Encaixes, livros ilustrados lidos em conjunto, jogos de memória visual.</p></li></ol></div>
+<div class="inv"><div class="w sec two"><div><p class="eyebrow">Por que anéis concêntricos</p><h2>A lógica do Olho de Boi</h2>
+<p>O recém-nascido distingue pouco as cores e os detalhes finos. O que ele enxerga bem são fronteiras nítidas entre claro e escuro. Por isso as cartelas usam preto e branco puros e formas espessas.</p></div>
+<ul class="pts"><li><h3>Fala a língua da retina</h3><p>As células da retina respondem a um centro cercado por uma borda de sinal oposto. Os anéis repetem esse desenho e produzem uma resposta forte.</p></li>
+<li><h3>Traz o olhar para o centro</h3><p>As bordas circulares grossas funcionam como um funil: captam a atenção periférica e conduzem os olhos de volta ao meio do alvo.</p></li>
+<li><h3>Treina o seguimento</h3><p>Com o olhar ancorado, a cartela é movida devagar, em arcos suaves. O bebê acompanha, e com isso exercita os olhos e a sustentação da cabeça.</p></li></ul></div></div>
+<div class="w sec two"><div><p class="eyebrow">Em casa</p><h2>Como entra na rotina</h2>
+<p>A estimulação continua fora do consultório. Poucos minutos, repetidos todos os dias, em momentos de calma e de afeto.</p></div>
+<ul class="pts plain"><li><h3>No berço e no chão</h3><p>Com o bebê deitado, as cartelas ficam ao alcance do olhar. De bruços, convidam a erguer a cabeça e fortalecer o tronco.</p></li>
+<li><h3>De perto</h3><p>No primeiro mês, apresente o material a cerca de 20 a 30 cm do rosto do bebê.</p></li>
+<li><h3>Junto com a voz e o toque</h3><p>Troca de fralda, banho e colo são boas horas. Ver, ouvir e sentir ao mesmo tempo ajuda o bebê a organizar as respostas.</p></li></ul></div>
+<div class="w"><p class="note">Os materiais apoiam a estimulação e a avaliação da visão. Eles não substituem a consulta com o oftalmologista nem o acompanhamento de um profissional habilitado.</p></div>
+</section>
+
+<section class="panel" id="catalogo" data-panel>
+<div class="w sec phead"><p class="eyebrow">Catálogo</p><h1 class="h1b">17 recursos para estimular e avaliar a visão.</h1>
+<p class="lead">Os pedidos são feitos pelo Instagram. Toque em qualquer item para abrir o perfil <a href="https://www.instagram.com/evolucaovisual/" target="_blank" rel="noopener">@evolucaovisual</a> e enviar uma mensagem.</p>
+<div class="chips" role="group" aria-label="Filtrar por categoria"><button class="chip on" type="button" data-f="all" id="f-all">Todos <small>17</small></button><button class="chip" type="button" data-f="estimulacao-visual" id="f-estimulacao-visual">Estimulação visual <small>7</small></button><button class="chip" type="button" data-f="avaliacao-e-ortoptica" id="f-avaliacao-e-ortoptica">Avaliação e ortóptica <small>1</small></button><button class="chip" type="button" data-f="acuidade-visual" id="f-acuidade-visual">Acuidade visual <small>4</small></button><button class="chip" type="button" data-f="sensibilidade-ao-contraste" id="f-sensibilidade-ao-contraste">Sensibilidade ao contraste <small>2</small></button><button class="chip" type="button" data-f="leitura-e-escrita" id="f-leitura-e-escrita">Leitura e escrita <small>1</small></button><button class="chip" type="button" data-f="visao-de-cores" id="f-visao-de-cores">Visão de cores <small>2</small></button></div></div>
+<div class="w"><div class="grid g3" id="grid"><a class="pc" href="https://www.instagram.com/evolucaovisual/" target="_blank" rel="noopener" data-cat="estimulacao-visual" aria-label="Kit Cartelas com Contrastes, R$ 120,00. Pedir pelo Instagram">
+<span class="pimg"><img src="img/prod01.jpg" alt="Kit Cartelas com Contrastes" loading="lazy"></span>
+<span class="pb"><span class="pn">01</span><span class="pcat">Estimulação visual</span>
+<span class="pname">Kit Cartelas com Contrastes</span><span class="pspec">para Estimulação Visual</span>
+<span class="prow"><b>R$ 120,00</b><em>Pedir no Instagram <span aria-hidden="true">↗</span></em></span></span></a><a class="pc" href="https://www.instagram.com/evolucaovisual/" target="_blank" rel="noopener" data-cat="estimulacao-visual" aria-label="Kit Cartelas com Gravuras de Animais, R$ 70,00. Pedir pelo Instagram">
+<span class="pimg"><img src="img/prod02.jpg" alt="Kit Cartelas com Gravuras de Animais" loading="lazy"></span>
+<span class="pb"><span class="pn">02</span><span class="pcat">Estimulação visual</span>
+<span class="pname">Kit Cartelas com Gravuras de Animais</span><span class="pspec">Diâmetro 11 cm</span>
+<span class="prow"><b>R$ 70,00</b><em>Pedir no Instagram <span aria-hidden="true">↗</span></em></span></span></a><a class="pc" href="https://www.instagram.com/evolucaovisual/" target="_blank" rel="noopener" data-cat="estimulacao-visual" aria-label="Cartelas com Brilho, R$ 30,00. Pedir pelo Instagram">
+<span class="pimg"><img src="img/prod03.jpg" alt="Cartelas com Brilho" loading="lazy"></span>
+<span class="pb"><span class="pn">03</span><span class="pcat">Estimulação visual</span>
+<span class="pname">Cartelas com Brilho</span><span class="pspec"></span>
+<span class="prow"><b>R$ 30,00</b><i>unidade</i><em>Pedir no Instagram <span aria-hidden="true">↗</span></em></span></span></a><a class="pc" href="https://www.instagram.com/evolucaovisual/" target="_blank" rel="noopener" data-cat="estimulacao-visual" aria-label="Kit Cartelas Olho de Boi, R$ 50,00. Pedir pelo Instagram">
+<span class="pimg"><img src="img/prod04.jpg" alt="Kit Cartelas Olho de Boi" loading="lazy"></span>
+<span class="pb"><span class="pn">04</span><span class="pcat">Estimulação visual</span>
+<span class="pname">Kit Cartelas Olho de Boi</span><span class="pspec">Diâmetro 10 cm</span>
+<span class="prow"><b>R$ 50,00</b><em>Pedir no Instagram <span aria-hidden="true">↗</span></em></span></span></a><a class="pc" href="https://www.instagram.com/evolucaovisual/" target="_blank" rel="noopener" data-cat="avaliacao-e-ortoptica" aria-label="Oclusores com Contrastes e Cores, R$ 25,00. Pedir pelo Instagram">
+<span class="pimg port"><img src="img/prod05.jpg" alt="Oclusores com Contrastes e Cores" loading="lazy"></span>
+<span class="pb"><span class="pn">05</span><span class="pcat">Avaliação e ortóptica</span>
+<span class="pname">Oclusores com Contrastes e Cores</span><span class="pspec">Avaliação e ortóptica</span>
+<span class="prow"><b>R$ 25,00</b><i>unidade</i><em>Pedir no Instagram <span aria-hidden="true">↗</span></em></span></span></a><a class="pc" href="https://www.instagram.com/evolucaovisual/" target="_blank" rel="noopener" data-cat="acuidade-visual" aria-label="Tabela de Acuidade Visual, R$ 75,00. Pedir pelo Instagram">
+<span class="pimg port"><img src="img/prod06.jpg" alt="Tabela de Acuidade Visual" loading="lazy"></span>
+<span class="pb"><span class="pn">06</span><span class="pcat">Acuidade visual</span>
+<span class="pname">Tabela de Acuidade Visual</span><span class="pspec">Tabela de Snellen</span>
+<span class="prow"><b>R$ 75,00</b><i>unidade</i><em>Pedir no Instagram <span aria-hidden="true">↗</span></em></span></span></a><a class="pc" href="https://www.instagram.com/evolucaovisual/" target="_blank" rel="noopener" data-cat="acuidade-visual" aria-label="Tabela de Acuidade Visual · Gravuras, R$ 80,00. Pedir pelo Instagram">
+<span class="pimg port"><img src="img/prod07.jpg" alt="Tabela de Acuidade Visual · Gravuras" loading="lazy"></span>
+<span class="pb"><span class="pn">07</span><span class="pcat">Acuidade visual</span>
+<span class="pname">Tabela de Acuidade Visual · Gravuras</span><span class="pspec">Com plaquinha de pareamento</span>
+<span class="prow"><b>R$ 80,00</b><em>Pedir no Instagram <span aria-hidden="true">↗</span></em></span></span></a><a class="pc" href="https://www.instagram.com/evolucaovisual/" target="_blank" rel="noopener" data-cat="sensibilidade-ao-contraste" aria-label="Tabela de Sensibilidade a Contrastes, R$ 75,00. Pedir pelo Instagram">
+<span class="pimg port"><img src="img/prod08.jpg" alt="Tabela de Sensibilidade a Contrastes" loading="lazy"></span>
+<span class="pb"><span class="pn">08</span><span class="pcat">Sensibilidade ao contraste</span>
+<span class="pname">Tabela de Sensibilidade a Contrastes</span><span class="pspec">Pelli-Robson</span>
+<span class="prow"><b>R$ 75,00</b><em>Pedir no Instagram <span aria-hidden="true">↗</span></em></span></span></a><a class="pc" href="https://www.instagram.com/evolucaovisual/" target="_blank" rel="noopener" data-cat="estimulacao-visual" aria-label="Kit de Cartelas Gravuras com Contrastes Coloridos, R$ 170,00. Pedir pelo Instagram">
+<span class="pimg"><img src="img/prod09.jpg" alt="Kit de Cartelas Gravuras com Contrastes Coloridos" loading="lazy"></span>
+<span class="pb"><span class="pn">09</span><span class="pcat">Estimulação visual</span>
+<span class="pname">Kit de Cartelas Gravuras com Contrastes Coloridos</span><span class="pspec">Tamanho 15 x 21 cm</span>
+<span class="prow"><b>R$ 170,00</b><em>Pedir no Instagram <span aria-hidden="true">↗</span></em></span></span></a><a class="pc" href="https://www.instagram.com/evolucaovisual/" target="_blank" rel="noopener" data-cat="estimulacao-visual" aria-label="Copos com Cores e Contrastes, R$ 70,00. Pedir pelo Instagram">
+<span class="pimg"><img src="img/prod10.jpg" alt="Copos com Cores e Contrastes" loading="lazy"></span>
+<span class="pb"><span class="pn">10</span><span class="pcat">Estimulação visual</span>
+<span class="pname">Copos com Cores e Contrastes</span><span class="pspec">Acompanha lanterna</span>
+<span class="prow"><b>R$ 70,00</b><em>Pedir no Instagram <span aria-hidden="true">↗</span></em></span></span></a><a class="pc" href="https://www.instagram.com/evolucaovisual/" target="_blank" rel="noopener" data-cat="estimulacao-visual" aria-label="Mini Painel de Cores, R$ 80,00. Pedir pelo Instagram">
+<span class="pimg"><img src="img/prod11.jpg" alt="Mini Painel de Cores" loading="lazy"></span>
+<span class="pb"><span class="pn">11</span><span class="pcat">Estimulação visual</span>
+<span class="pname">Mini Painel de Cores</span><span class="pspec">Acompanha luz de LED</span>
+<span class="prow"><b>R$ 80,00</b><em>Pedir no Instagram <span aria-hidden="true">↗</span></em></span></span></a><a class="pc" href="https://www.instagram.com/evolucaovisual/" target="_blank" rel="noopener" data-cat="acuidade-visual" aria-label="Kit de Tabelas de Acuidade Visual, R$ 100,00. Pedir pelo Instagram">
+<span class="pimg"><img src="img/prod12.jpg" alt="Kit de Tabelas de Acuidade Visual" loading="lazy"></span>
+<span class="pb"><span class="pn">12</span><span class="pcat">Acuidade visual</span>
+<span class="pname">Kit de Tabelas de Acuidade Visual</span><span class="pspec">Perto</span>
+<span class="prow"><b>R$ 100,00</b><em>Pedir no Instagram <span aria-hidden="true">↗</span></em></span></span></a><a class="pc" href="https://www.instagram.com/evolucaovisual/" target="_blank" rel="noopener" data-cat="sensibilidade-ao-contraste" aria-label="Teste de Sensibilidade a Contrastes, R$ 250,00. Pedir pelo Instagram">
+<span class="pimg"><img src="img/prod13.jpg" alt="Teste de Sensibilidade a Contrastes" loading="lazy"></span>
+<span class="pb"><span class="pn">13</span><span class="pcat">Sensibilidade ao contraste</span>
+<span class="pname">Teste de Sensibilidade a Contrastes</span><span class="pspec">Face Test</span>
+<span class="prow"><b>R$ 250,00</b><em>Pedir no Instagram <span aria-hidden="true">↗</span></em></span></span></a><a class="pc" href="https://www.instagram.com/evolucaovisual/" target="_blank" rel="noopener" data-cat="leitura-e-escrita" aria-label="Tiposcópio, R$ 80,00. Pedir pelo Instagram">
+<span class="pimg"><img src="img/prod14.jpg" alt="Tiposcópio" loading="lazy"></span>
+<span class="pb"><span class="pn">14</span><span class="pcat">Leitura e escrita</span>
+<span class="pname">Tiposcópio</span><span class="pspec">Leitura e escrita · Acetato amarelo</span>
+<span class="prow"><b>R$ 80,00</b><em>Pedir no Instagram <span aria-hidden="true">↗</span></em></span></span></a><a class="pc" href="https://www.instagram.com/evolucaovisual/" target="_blank" rel="noopener" data-cat="visao-de-cores" aria-label="Teste de Ishihara, R$ 100,00. Pedir pelo Instagram">
+<span class="pimg"><img src="img/prod15.jpg" alt="Teste de Ishihara" loading="lazy"></span>
+<span class="pb"><span class="pn">15</span><span class="pcat">Visão de cores</span>
+<span class="pname">Teste de Ishihara</span><span class="pspec">10 cm</span>
+<span class="prow"><b>R$ 100,00</b><em>Pedir no Instagram <span aria-hidden="true">↗</span></em></span></span></a><a class="pc" href="https://www.instagram.com/evolucaovisual/" target="_blank" rel="noopener" data-cat="visao-de-cores" aria-label="Teste de Ishihara Kid, R$ 70,00. Pedir pelo Instagram">
+<span class="pimg"><img src="img/prod16.jpg" alt="Teste de Ishihara Kid" loading="lazy"></span>
+<span class="pb"><span class="pn">16</span><span class="pcat">Visão de cores</span>
+<span class="pname">Teste de Ishihara Kid</span><span class="pspec">10 cm</span>
+<span class="prow"><b>R$ 70,00</b><em>Pedir no Instagram <span aria-hidden="true">↗</span></em></span></span></a><a class="pc" href="https://www.instagram.com/evolucaovisual/" target="_blank" rel="noopener" data-cat="acuidade-visual" aria-label="Réplica do Lea Gratings, R$ 350,00. Pedir pelo Instagram">
+<span class="pimg"><img src="img/prod17.jpg" alt="Réplica do Lea Gratings" loading="lazy"></span>
+<span class="pb"><span class="pn">17</span><span class="pcat">Acuidade visual</span>
+<span class="pname">Réplica do Lea Gratings</span><span class="pspec">0,25 CPM a 8,0 CPM</span>
+<span class="prow"><b>R$ 350,00</b><em>Pedir no Instagram <span aria-hidden="true">↗</span></em></span></span></a></div>
+<p class="note">Itens marcados como unidade são vendidos individualmente. Valores sujeitos a confirmação no momento do pedido.</p></div>
+</section>
+
+<section class="panel" id="galeria" data-panel>
+<div class="w sec phead"><p class="eyebrow">Galeria</p><h1 class="h1b">Os materiais em uso.</h1>
+<p class="lead">Registros de atendimentos. Os rostos das crianças foram cobertos com o desenho que estampa as cartelas, para preservar a identidade delas.</p></div>
+<div class="w"><div class="masonry"><figure class=""><img src="img/p08.jpg" width="1100" height="1024" alt="Cartela com brilho em atendimento" loading="lazy"><figcaption>Cartela com brilho em atendimento</figcaption></figure><figure class=""><img src="img/p01.jpg" width="808" height="1080" alt="Cartelas Olho de Boi presas ao berço" loading="lazy"><figcaption>Cartelas Olho de Boi presas ao berço</figcaption></figure><figure class=""><img src="img/p07.jpg" width="1100" height="990" alt="Rostos em cores de alto contraste" loading="lazy"><figcaption>Rostos em cores de alto contraste</figcaption></figure><figure class=""><img src="img/p10.jpg" width="1046" height="930" alt="Raquete de contraste com lanterna" loading="lazy"><figcaption>Raquete de contraste com lanterna</figcaption></figure><figure class=""><img src="img/p14.jpg" width="1100" height="521" alt="Dia Mundial da Prematuridade, 17 de novembro" loading="lazy"><figcaption>Dia Mundial da Prematuridade, 17 de novembro</figcaption></figure><figure class=""><img src="img/p06.jpg" width="782" height="898" alt="Tiposcópio na leitura de perto" loading="lazy"><figcaption>Tiposcópio na leitura de perto</figcaption></figure><figure class=""><img src="img/p09.jpg" width="1046" height="1100" alt="Cartela listrada em amarelo e preto, com a Pelli-Robson ao fundo" loading="lazy"><figcaption>Cartela listrada em amarelo e preto, com a Pelli-Robson ao fundo</figcaption></figure><figure class=""><img src="img/p05.jpg" width="818" height="914" alt="Pintura guiada em atendimento" loading="lazy"><figcaption>Pintura guiada em atendimento</figcaption></figure><figure class=""><img src="img/p12.jpg" width="1100" height="1014" alt="Raquete xadrez em atendimento" loading="lazy"><figcaption>Raquete xadrez em atendimento</figcaption></figure><figure class=""><img src="img/p04.jpg" width="1073" height="1100" alt="Atendimento com luvas pretas" loading="lazy"><figcaption>Atendimento com luvas pretas</figcaption></figure><figure class=""><img src="img/p02.jpg" width="952" height="1100" alt="Jean Hipólito em atendimento" loading="lazy"><figcaption>Jean Hipólito em atendimento</figcaption></figure><figure class=""><img src="img/p13.jpg" width="1100" height="1017" alt="Tabela de gravuras para acuidade visual" loading="lazy"><figcaption>Tabela de gravuras para acuidade visual</figcaption></figure></div></div>
+</section>
+
+<section class="panel" id="contato" data-panel>
+<div class="w sec phead"><p class="eyebrow">Contato</p><h1 class="h1b">Fale com a Evolução Visual.</h1>
+<p class="lead">Pedidos, dúvidas sobre os materiais e orientações de uso são atendidos por Jean Hipólito, terapeuta ocupacional (CREFITO-6 nº 4269-TO).</p></div>
+<div class="w"><div class="ct"><a class="big" href="https://www.instagram.com/evolucaovisual/" target="_blank" rel="noopener"><small>Instagram</small>@evolucaovisual <span aria-hidden="true">↗</span></a>
+<div class="big"><small>Telefone e WhatsApp</small><span class="tel" id="tel">(85) 98818-4600</span>
+<span class="acts"><button type="button" class="btn sm" id="copytel">Copiar número</button><a class="btn sm ghost" href="https://wa.me/5585988184600" target="_blank" rel="noopener">Abrir no WhatsApp ↗</a></span></div></div></div>
+</section>
+</main>
+<footer class="foot"><div class="pat" aria-hidden="true"><i class="s"></i><i class="c"></i><i class="r"></i><i class="d"></i><i class="s v"></i><i class="c"></i></div><div class="w fin"><div class="fb"><img src="img/logo.png" alt="" width="72" height="72"><div><strong>Evolução Visual</strong><span>Jean Hipólito · Terapeuta Ocupacional · CREFITO-6 nº 4269-TO</span></div></div>
+<div class="fl"><a href="https://www.instagram.com/evolucaovisual/" target="_blank" rel="noopener">Instagram @evolucaovisual ↗</a><span>(85) 98818-4600</span></div></div></footer>
+<script>(function(){
+var ids=['inicio','estimulacao','catalogo','galeria','contato'];
+var panels=document.querySelectorAll('[data-panel]');
+function show(id,scroll){if(ids.indexOf(id)<0)id='inicio';
+ panels.forEach(function(p){p.hidden=p.id!==id});
+ document.querySelectorAll('.tabs [role=tab]').forEach(function(b){var on=b.dataset.go===id;b.setAttribute('aria-selected',on);if(on&&b.scrollIntoView)try{b.scrollIntoView({block:'nearest',inline:'center'})}catch(e){}});
+ if(scroll)window.scrollTo(0,0);
+ try{history.replaceState(null,'','#'+id)}catch(e){}}
+document.addEventListener('click',function(e){var t=e.target.closest('[data-go]');if(!t)return;e.preventDefault();show(t.dataset.go,true)});
+window.addEventListener('hashchange',function(){show(location.hash.slice(1),true)});
+show((location.hash||'#inicio').slice(1),false);
+var chips=document.querySelectorAll('.chip');
+chips.forEach(function(c){c.addEventListener('click',function(){chips.forEach(function(x){x.classList.toggle('on',x===c)});
+ document.querySelectorAll('#grid .pc').forEach(function(a){a.hidden=!(c.dataset.f==='all'||a.dataset.cat===c.dataset.f)})})});
+var cb=document.getElementById('copytel');
+if(cb)cb.addEventListener('click',function(){var done=function(){cb.textContent='Número copiado';setTimeout(function(){cb.textContent='Copiar número'},2000)};
+ var sel=function(){var r=document.createRange();r.selectNodeContents(document.getElementById('tel'));var s=getSelection();s.removeAllRanges();s.addRange(r);cb.textContent='Número selecionado'};
+ try{navigator.clipboard.writeText('(85) 98818-4600').then(done,sel)}catch(e){sel()}});
+})();
+</script>
+</body></html>
